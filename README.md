@@ -6,7 +6,9 @@ Application contains **/api/submit** endpoint to create submissions.
 
 Follow the steps to install the application:
 
-1. Run following command to install the composer dependency without installtion composer in local machine. 
+1. Copy .env.example to .env
+
+2. Run following command to install the composer dependency without installtion composer in local machine. 
 
 ```shell
 docker run --rm \
@@ -17,12 +19,12 @@ docker run --rm \
     composer update laravel/sail
 ```
 
-2. Start docker containers
+3. Start docker containers
 ```shell
 vendor/bin/sail up -d
 ```
 
-3. Migrate database tables using following command: 
+4. Migrate database tables using following command: 
 ```shell
 vendor/bin/sail php artisan migrate
 ```
